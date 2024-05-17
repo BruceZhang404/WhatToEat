@@ -10,12 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    manghe.cpp \
+    tujian.cpp \
     widget.cpp
 
 HEADERS += \
+    manghe.h \
+    tujian.h \
     widget.h
 
 FORMS += \
+    manghe.ui \
+    tujian.ui \
     widget.ui
 
 # Default rules for deployment.
