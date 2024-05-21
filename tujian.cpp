@@ -1,5 +1,6 @@
 #include "tujian.h"
 #include "ui_tujian.h"
+#include "widget.h"
 
 Tujian::Tujian(QWidget *parent)
     : QWidget(parent)
@@ -27,7 +28,6 @@ void Tujian::on_next_clicked()
     page%=endpage;
     ui->stackedWidget->setCurrentIndex(page);
 } //图鉴下一页
-
 
 void Tujian::on_returnmenu_clicked()
 {

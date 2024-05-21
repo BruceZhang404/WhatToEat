@@ -1,5 +1,6 @@
 #include "manghe.h"
 #include "ui_manghe.h"
+#include "widget.h"
 
 Manghe::Manghe(QWidget *parent)
     : QWidget(parent)

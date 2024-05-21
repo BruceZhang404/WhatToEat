@@ -2,8 +2,6 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <tujian.h>
-#include <manghe.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,8 +18,8 @@ public:
     ~Widget();
 
 private slots:
-    void on_startmh_clicked();
-    void on_starttj_clicked();
+    void turntomh();
+    void turntotj();
 
 private:
     Ui::Widget *ui;

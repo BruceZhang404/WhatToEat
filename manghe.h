@@ -1,8 +1,7 @@
 #ifndef MANGHE_H
 #define MANGHE_H
 
-#include <Qwidget>
-#include "widget.h"
+#include <QWidget>
 
 namespace Ui {
 class Manghe;

@@ -1,11 +1,21 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include "tujian.h"
+#include "manghe.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
+
+    QPixmap pixmap = QPixmap("://images/home page.png").scaled(this->size());
+    QPalette palette(this->palette());
+    palette.setBrush(this->backgroundRole(), QBrush(pixmap));
+    this->setPalette(palette); //设置背景图片
+
+    connect(ui->startmh,&QPushButton::clicked,this,&Widget::turntomh); //盲盒模式开始按钮槽
+    connect(ui->starttj,&QPushButton::clicked,this,&Widget::turntotj); //图鉴模式开始按钮槽
 }
 
 Widget::~Widget()
@@ -13,18 +23,16 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::on_startmh_clicked()
+void Widget::turntomh()
 {
     Manghe *mh=new Manghe();
     this->close();
     mh->show();
-} //切换到盲盒
+} //盲盒模式槽连接函数
 
-
-void Widget::on_starttj_clicked()
+void Widget::turntotj()
 {
     Tujian *tj=new Tujian();
     this->close();
     tj->show();
-} //切换到图鉴
-
+} //图鉴模式槽连接函数

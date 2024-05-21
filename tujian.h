@@ -1,8 +1,7 @@
 #ifndef TUJIAN_H
 #define TUJIAN_H
 
-#include <Qwidget>
-#include "widget.h"
+#include <QWidget>
 
 namespace Ui {
 class Tujian;
