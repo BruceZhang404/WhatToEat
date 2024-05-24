@@ -1,7 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
-#include "tujian.h"
-#include "manghe.h"
+#include "tujianwindow.h"
+//#include "manghe.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -9,7 +9,7 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPixmap pixmap = QPixmap("://images/home page.png").scaled(this->size());
+    QPixmap pixmap = QPixmap(":/tujian/source/home page.png").scaled(this->size());
     QPalette palette(this->palette());
     palette.setBrush(this->backgroundRole(), QBrush(pixmap));
     this->setPalette(palette); //设置背景图片
@@ -25,14 +25,15 @@ Widget::~Widget()
 
 void Widget::turntomh()
 {
-    Manghe *mh=new Manghe();
-    this->close();
-    mh->show();
+    // Manghe *mh=new Manghe();
+    // this->close();
+    // mh->show();
 } //盲盒模式槽连接函数
 
 void Widget::turntotj()
 {
-    Tujian *tj=new Tujian();
-    this->close();
+    TujianWindow* tj=new TujianWindow();
+    tj->wparent=this;
+    this->hide();
     tj->show();
 } //图鉴模式槽连接函数

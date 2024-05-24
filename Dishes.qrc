@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>source/广式腊肠煲仔饭_家三_16元.jpg</file>
+        <file>source/临沂炒鸡_农二_15一份（有半份）.jpg</file>
+        <file>source/卤肉饭_家三_12元.jpg</file>
+        <file>source/叉烧煲仔饭_家三_18元.jpg</file>
+        <file>source/土豆泥拌饭_家二_10元.jpg</file>
+        <file>source/小鸡炖蘑菇_农二_15一份（有半份）.jpg</file>
+        <file>source/干煸仔鸡饭_家三_12元.jpg</file>
+        <file>source/广式叉烧饭_燕南_17元.jpg</file>
+        <file>source/擂椒炒蛋_农二_8元一份（有半份）.jpg</file>
+        <file>source/梅菜扣肉饭_家三_12元.jpg</file>
+        <file>source/水煮肥牛_家二_16元.jpg</file>
+        <file>source/烤五花肉拌饭_家二_16元.jpg</file>
+        <file>source/烤冷面_学一_5.5元.jpg</file>
+        <file>source/烧鸭饭_燕南_15元.jpg</file>
+        <file>source/石锅腊味饭_家二_16元.jpg</file>
+        <file>source/藤椒鱼_家二_15元.jpg</file>
+        <file>source/超级至尊披萨_学一_8元.jpg</file>
+        <file>source/锅包肉_农二_15一份（有半份）.jpg</file>
+        <file>source/香辣鸡腿饭_家三_7元.jpg</file>
+        <file>source/鸡肉木桶饭_农二_12元.jpg</file>
+    </qresource>
+</RCC>
